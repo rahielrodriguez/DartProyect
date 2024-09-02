@@ -117,4 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value>It is a dart game that shows its board
+and where the darts land on it. It throws 3
+darts to a random position and saves the
+coordinates of these ones in an external file
+in order to reproduce again this results.</value>
+  </data>
 </root>
