@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class DartsForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DartPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ThrowButton = New System.Windows.Forms.Button()
+        Me.ResetButton = New System.Windows.Forms.Button()
+        Me.ExitButton = New System.Windows.Forms.Button()
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,13 +41,46 @@ Partial Class Form1
         Me.DartPictureBox.TabIndex = 0
         Me.DartPictureBox.TabStop = False
         '
-        'Form1
+        'ThrowButton
+        '
+        Me.ThrowButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ThrowButton.Location = New System.Drawing.Point(1081, 912)
+        Me.ThrowButton.Name = "ThrowButton"
+        Me.ThrowButton.Size = New System.Drawing.Size(144, 84)
+        Me.ThrowButton.TabIndex = 1
+        Me.ThrowButton.Text = "Throw"
+        Me.ThrowButton.UseVisualStyleBackColor = True
+        '
+        'ResetButton
+        '
+        Me.ResetButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ResetButton.Location = New System.Drawing.Point(1081, 822)
+        Me.ResetButton.Name = "ResetButton"
+        Me.ResetButton.Size = New System.Drawing.Size(144, 84)
+        Me.ResetButton.TabIndex = 2
+        Me.ResetButton.Text = "Reset"
+        Me.ResetButton.UseVisualStyleBackColor = True
+        '
+        'ExitButton
+        '
+        Me.ExitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExitButton.Location = New System.Drawing.Point(1081, 732)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(144, 84)
+        Me.ExitButton.TabIndex = 3
+        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.UseVisualStyleBackColor = True
+        '
+        'DartsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1230, 1009)
+        Me.Controls.Add(Me.ExitButton)
+        Me.Controls.Add(Me.ResetButton)
+        Me.Controls.Add(Me.ThrowButton)
         Me.Controls.Add(Me.DartPictureBox)
-        Me.Name = "Form1"
+        Me.Name = "DartsForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -53,4 +89,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents DartPictureBox As PictureBox
+    Friend WithEvents ThrowButton As Button
+    Friend WithEvents ResetButton As Button
+    Friend WithEvents ExitButton As Button
 End Class
