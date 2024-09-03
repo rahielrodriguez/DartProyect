@@ -123,5 +123,8 @@
   <ItemGroup>
     <None Include="Resources\Dart Net.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Dart Board.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

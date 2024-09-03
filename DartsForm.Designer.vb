@@ -39,10 +39,10 @@ Partial Class DartsForm
         Me.DartPictureBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DartPictureBox.Image = Global.DartsProyect.My.Resources.Resources.Dart_Net
+        Me.DartPictureBox.Image = Global.DartsProyect.My.Resources.Resources.New_Dart_Board
         Me.DartPictureBox.Location = New System.Drawing.Point(12, 12)
         Me.DartPictureBox.Name = "DartPictureBox"
-        Me.DartPictureBox.Size = New System.Drawing.Size(1061, 985)
+        Me.DartPictureBox.Size = New System.Drawing.Size(478, 436)
         Me.DartPictureBox.TabIndex = 0
         Me.DartPictureBox.TabStop = False
         Me.ToolTip1.SetToolTip(Me.DartPictureBox, "Displays the board for the dart game.")
@@ -50,7 +50,7 @@ Partial Class DartsForm
         'ThrowButton
         '
         Me.ThrowButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ThrowButton.Location = New System.Drawing.Point(1081, 912)
+        Me.ThrowButton.Location = New System.Drawing.Point(553, 364)
         Me.ThrowButton.Name = "ThrowButton"
         Me.ThrowButton.Size = New System.Drawing.Size(144, 84)
         Me.ThrowButton.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class DartsForm
         'ResetButton
         '
         Me.ResetButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ResetButton.Location = New System.Drawing.Point(1081, 822)
+        Me.ResetButton.Location = New System.Drawing.Point(553, 274)
         Me.ResetButton.Name = "ResetButton"
         Me.ResetButton.Size = New System.Drawing.Size(144, 84)
         Me.ResetButton.TabIndex = 2
@@ -73,7 +73,7 @@ Partial Class DartsForm
         '
         Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ExitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ExitButton.Location = New System.Drawing.Point(1081, 732)
+        Me.ExitButton.Location = New System.Drawing.Point(553, 184)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(144, 84)
         Me.ExitButton.TabIndex = 3
@@ -95,7 +95,7 @@ Partial Class DartsForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
-        Me.ClientSize = New System.Drawing.Size(1230, 1009)
+        Me.ClientSize = New System.Drawing.Size(721, 466)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ResetButton)
