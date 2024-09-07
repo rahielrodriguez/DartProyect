@@ -24,28 +24,13 @@ Partial Class DartsForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DartsForm))
-        Me.DartPictureBox = New System.Windows.Forms.PictureBox()
         Me.ThrowButton = New System.Windows.Forms.Button()
         Me.ResetButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.DartPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'DartPictureBox
-        '
-        Me.DartPictureBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DartPictureBox.Image = Global.DartsProyect.My.Resources.Resources.New_Dart_Board
-        Me.DartPictureBox.Location = New System.Drawing.Point(12, 12)
-        Me.DartPictureBox.Name = "DartPictureBox"
-        Me.DartPictureBox.Size = New System.Drawing.Size(478, 436)
-        Me.DartPictureBox.TabIndex = 0
-        Me.DartPictureBox.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.DartPictureBox, "Displays the board for the dart game.")
         '
         'ThrowButton
         '
@@ -81,13 +66,18 @@ Partial Class DartsForm
         Me.ToolTip1.SetToolTip(Me.ExitButton, "Closes the program.")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'DartPictureBox
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(8, 8)
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
+        Me.DartPictureBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DartPictureBox.BackgroundImage = Global.DartsProyect.My.Resources.Resources.New_Dart_Board
+        Me.DartPictureBox.Location = New System.Drawing.Point(12, 18)
+        Me.DartPictureBox.Name = "DartPictureBox"
+        Me.DartPictureBox.Size = New System.Drawing.Size(472, 436)
+        Me.DartPictureBox.TabIndex = 0
+        Me.DartPictureBox.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.DartPictureBox, "Displays the board for the dart game.")
         '
         'DartsForm
         '
@@ -96,7 +86,6 @@ Partial Class DartsForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(721, 466)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ResetButton)
         Me.Controls.Add(Me.ThrowButton)
@@ -106,15 +95,12 @@ Partial Class DartsForm
         Me.Text = "Darts Game"
         Me.ToolTip1.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents DartPictureBox As PictureBox
     Friend WithEvents ThrowButton As Button
     Friend WithEvents ResetButton As Button
     Friend WithEvents ExitButton As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents DartPictureBox As PictureBox
 End Class
