@@ -18,8 +18,8 @@ Public Class DartsForm
     End Sub
 
     Private Sub ThrowButton_Click(sender As Object, e As EventArgs) Handles ThrowButton.Click
-        DrawCircle()
         DartPictureBox.Refresh()
+        DrawCircle()
     End Sub
 
     Private Sub ResetButton_Click(sender As Object, e As EventArgs) Handles ResetButton.Click
