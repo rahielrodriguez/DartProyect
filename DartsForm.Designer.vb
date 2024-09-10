@@ -29,6 +29,9 @@ Partial Class DartsForm
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.DartPictureBox = New System.Windows.Forms.PictureBox()
+        Me.YTextBox = New System.Windows.Forms.TextBox()
+        Me.XTextBox = New System.Windows.Forms.TextBox()
+        Me.ReplayButton = New System.Windows.Forms.Button()
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,6 +82,31 @@ Partial Class DartsForm
         Me.DartPictureBox.TabStop = False
         Me.ToolTip1.SetToolTip(Me.DartPictureBox, "Displays the board for the dart game.")
         '
+        'YTextBox
+        '
+        Me.YTextBox.Location = New System.Drawing.Point(553, 66)
+        Me.YTextBox.Name = "YTextBox"
+        Me.YTextBox.Size = New System.Drawing.Size(140, 22)
+        Me.YTextBox.TabIndex = 4
+        '
+        'XTextBox
+        '
+        Me.XTextBox.Location = New System.Drawing.Point(553, 26)
+        Me.XTextBox.Name = "XTextBox"
+        Me.XTextBox.Size = New System.Drawing.Size(140, 22)
+        Me.XTextBox.TabIndex = 5
+        '
+        'ReplayButton
+        '
+        Me.ReplayButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReplayButton.Location = New System.Drawing.Point(549, 94)
+        Me.ReplayButton.Name = "ReplayButton"
+        Me.ReplayButton.Size = New System.Drawing.Size(144, 84)
+        Me.ReplayButton.TabIndex = 6
+        Me.ReplayButton.Text = "Replay"
+        Me.ToolTip1.SetToolTip(Me.ReplayButton, "Throws 3 aleatory ""darts"" to the net and saves the coordinates of this points.")
+        Me.ReplayButton.UseVisualStyleBackColor = True
+        '
         'DartsForm
         '
         Me.AcceptButton = Me.ThrowButton
@@ -86,6 +114,9 @@ Partial Class DartsForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(721, 466)
+        Me.Controls.Add(Me.ReplayButton)
+        Me.Controls.Add(Me.XTextBox)
+        Me.Controls.Add(Me.YTextBox)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ResetButton)
         Me.Controls.Add(Me.ThrowButton)
@@ -96,6 +127,7 @@ Partial Class DartsForm
         Me.ToolTip1.SetToolTip(Me, resources.GetString("$this.ToolTip"))
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ThrowButton As Button
@@ -103,4 +135,7 @@ Partial Class DartsForm
     Friend WithEvents ExitButton As Button
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents DartPictureBox As PictureBox
+    Friend WithEvents YTextBox As TextBox
+    Friend WithEvents XTextBox As TextBox
+    Friend WithEvents ReplayButton As Button
 End Class

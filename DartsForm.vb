@@ -32,6 +32,20 @@ Public Class DartsForm
         file.WriteLine("---------------------------------------------------------------")
         file.Close()
     End Sub
+    Sub SimulateCoordinates()
+        Dim draw As Pen
+        draw = New Pen(Drawing.Color.Blue, 3)
+        Dim myGraphics As Graphics = DartPictureBox.CreateGraphics
+
+        For i = 1 To 3
+            Dim xAxis = CInt(XTextBox.Text)
+            Dim yAxis = CInt(YTextBox.Text)
+
+            myGraphics.DrawEllipse(draw, xAxis, yAxis, 5, 5)
+
+        Next
+
+    End Sub
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
 
@@ -44,6 +58,13 @@ Public Class DartsForm
 
     Private Sub ResetButton_Click(sender As Object, e As EventArgs) Handles ResetButton.Click
         DartPictureBox.Refresh()
+        XTextBox.Text = ""
+        YTextBox.Text = ""
+
     End Sub
 
+    Private Sub ReplayButton_Click(sender As Object, e As EventArgs) Handles ReplayButton.Click
+        SimulateCoordinates()
+
+    End Sub
 End Class
