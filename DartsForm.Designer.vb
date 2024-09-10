@@ -29,9 +29,11 @@ Partial Class DartsForm
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.DartPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ReplayButton = New System.Windows.Forms.Button()
         Me.YTextBox = New System.Windows.Forms.TextBox()
         Me.XTextBox = New System.Windows.Forms.TextBox()
-        Me.ReplayButton = New System.Windows.Forms.Button()
+        Me.XLabel = New System.Windows.Forms.Label()
+        Me.YCoordinateLabel = New System.Windows.Forms.Label()
         CType(Me.DartPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,20 +84,6 @@ Partial Class DartsForm
         Me.DartPictureBox.TabStop = False
         Me.ToolTip1.SetToolTip(Me.DartPictureBox, "Displays the board for the dart game.")
         '
-        'YTextBox
-        '
-        Me.YTextBox.Location = New System.Drawing.Point(553, 66)
-        Me.YTextBox.Name = "YTextBox"
-        Me.YTextBox.Size = New System.Drawing.Size(140, 22)
-        Me.YTextBox.TabIndex = 4
-        '
-        'XTextBox
-        '
-        Me.XTextBox.Location = New System.Drawing.Point(553, 26)
-        Me.XTextBox.Name = "XTextBox"
-        Me.XTextBox.Size = New System.Drawing.Size(140, 22)
-        Me.XTextBox.TabIndex = 5
-        '
         'ReplayButton
         '
         Me.ReplayButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -104,8 +92,43 @@ Partial Class DartsForm
         Me.ReplayButton.Size = New System.Drawing.Size(144, 84)
         Me.ReplayButton.TabIndex = 6
         Me.ReplayButton.Text = "Replay"
-        Me.ToolTip1.SetToolTip(Me.ReplayButton, "Throws 3 aleatory ""darts"" to the net and saves the coordinates of this points.")
+        Me.ToolTip1.SetToolTip(Me.ReplayButton, "Replays one dart selected by the used from the darts coordinates list created by " &
+        "the program." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.ReplayButton.UseVisualStyleBackColor = True
+        '
+        'YTextBox
+        '
+        Me.YTextBox.Location = New System.Drawing.Point(553, 66)
+        Me.YTextBox.Name = "YTextBox"
+        Me.YTextBox.Size = New System.Drawing.Size(140, 22)
+        Me.YTextBox.TabIndex = 4
+        Me.ToolTip1.SetToolTip(Me.YTextBox, "The User will write the y coordinate of the dart that wants to replay")
+        '
+        'XTextBox
+        '
+        Me.XTextBox.Location = New System.Drawing.Point(553, 26)
+        Me.XTextBox.Name = "XTextBox"
+        Me.XTextBox.Size = New System.Drawing.Size(140, 22)
+        Me.XTextBox.TabIndex = 5
+        Me.ToolTip1.SetToolTip(Me.XTextBox, "The User will write the X coordinate of the dart is wants to replayed")
+        '
+        'XLabel
+        '
+        Me.XLabel.AutoSize = True
+        Me.XLabel.Location = New System.Drawing.Point(550, 7)
+        Me.XLabel.Name = "XLabel"
+        Me.XLabel.Size = New System.Drawing.Size(131, 16)
+        Me.XLabel.TabIndex = 7
+        Me.XLabel.Text = "X Replay Coordinate"
+        '
+        'YCoordinateLabel
+        '
+        Me.YCoordinateLabel.AutoSize = True
+        Me.YCoordinateLabel.Location = New System.Drawing.Point(550, 51)
+        Me.YCoordinateLabel.Name = "YCoordinateLabel"
+        Me.YCoordinateLabel.Size = New System.Drawing.Size(132, 16)
+        Me.YCoordinateLabel.TabIndex = 8
+        Me.YCoordinateLabel.Text = "Y Replay Coordinate"
         '
         'DartsForm
         '
@@ -114,6 +137,8 @@ Partial Class DartsForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(721, 466)
+        Me.Controls.Add(Me.YCoordinateLabel)
+        Me.Controls.Add(Me.XLabel)
         Me.Controls.Add(Me.ReplayButton)
         Me.Controls.Add(Me.XTextBox)
         Me.Controls.Add(Me.YTextBox)
@@ -138,4 +163,6 @@ Partial Class DartsForm
     Friend WithEvents YTextBox As TextBox
     Friend WithEvents XTextBox As TextBox
     Friend WithEvents ReplayButton As Button
+    Friend WithEvents XLabel As Label
+    Friend WithEvents YCoordinateLabel As Label
 End Class
