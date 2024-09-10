@@ -1,4 +1,9 @@
-﻿Option Strict On
+﻿'Rahiel Rodriguez
+'RCET 3371
+'Sept 10, 2024
+'Darts Game
+
+Option Strict On
 Option Explicit On
 
 Imports System.Drawing.Drawing2D
