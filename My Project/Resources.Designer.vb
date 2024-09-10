@@ -61,6 +61,18 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to 
+        '''
+        '''
+        '''.
+        '''</summary>
+        Friend ReadOnly Property Darts_Coordinates() As String
+            Get
+                Return ResourceManager.GetString("Darts_Coordinates", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property New_Dart_Board() As System.Drawing.Bitmap

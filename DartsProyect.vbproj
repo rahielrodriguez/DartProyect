@@ -126,5 +126,11 @@
   <ItemGroup>
     <None Include="Resources\New Dart Board.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DartsCoordinates.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Darts Coordinates.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

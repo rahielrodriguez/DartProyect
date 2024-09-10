@@ -74,7 +74,7 @@ Partial Class DartsForm
         Me.DartPictureBox.BackgroundImage = Global.DartsProyect.My.Resources.Resources.New_Dart_Board
         Me.DartPictureBox.Location = New System.Drawing.Point(12, 18)
         Me.DartPictureBox.Name = "DartPictureBox"
-        Me.DartPictureBox.Size = New System.Drawing.Size(472, 436)
+        Me.DartPictureBox.Size = New System.Drawing.Size(472, 430)
         Me.DartPictureBox.TabIndex = 0
         Me.DartPictureBox.TabStop = False
         Me.ToolTip1.SetToolTip(Me.DartPictureBox, "Displays the board for the dart game.")
