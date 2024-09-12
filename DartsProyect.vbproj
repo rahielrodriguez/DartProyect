@@ -121,13 +121,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dart Net.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\New Dart Board.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DartsCoordinates.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Darts Coordinates.txt" />

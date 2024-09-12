@@ -19,7 +19,6 @@ Public Class DartsForm
         Dim myGraphics As Graphics = DartPictureBox.CreateGraphics
         'Variable made to keep track of the dart number for each 3
         Dim dartsThrow As Integer
-        Dim file As System.IO.StreamWriter
         dartsThrow = 0
         Randomize()
 
@@ -35,13 +34,24 @@ Public Class DartsForm
 
             'opens a text file with the selected name
             'writes a line with the number of the dart and the coordinates
-            file = My.Computer.FileSystem.OpenTextFileWriter("Darts Coordinates.txt", True)
-            file.WriteLine($"{dartsThrow}. X = {xAxis} , Y = {yAxis}{vbNewLine}")
-            file.Close()
+            Try
+                FileOpen(1, "Darts Coordinates.txt", OpenMode.Append)
+                WriteLine(CInt($"{dartsThrow}. X = {xAxis} , Y = {yAxis}"))
+                FileClose()
+            Catch ex As Exception
+
+            End Try
+
         Next
-        file = My.Computer.FileSystem.OpenTextFileWriter("Darts Coordinates.txt", True)
-        file.WriteLine("---------------------------------------------------------------")
-        file.Close()
+
+        Try
+            FileOpen(1, "Darts Coordinates.txt", OpenMode.Append)
+            WriteLine(CInt("---------------------------------------------------------------"))
+            FileClose()
+        Catch ex As Exception
+
+        End Try
+
     End Sub
     Sub SimulateCoordinates()
         Dim draw As Pen
